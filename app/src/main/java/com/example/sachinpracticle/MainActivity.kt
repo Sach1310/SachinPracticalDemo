@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setObserver() {
-        binding.pvProgress.visibility= View.VISIBLE
+
         viewModel.getData().observe(this) {
             when (it.status) {
                 Resource.Status.SUCCESS -> {
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                     setRecyclerView(dataList)
                 }
                 Resource.Status.LOADING -> {
-
+                    binding.pvProgress.visibility= View.VISIBLE
                 }
                 Resource.Status.ERROR -> {
                     it.let {

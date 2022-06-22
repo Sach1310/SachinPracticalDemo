@@ -32,6 +32,8 @@ class ImagesAdapter(
                 .priority(Priority.IMMEDIATE)
                 .placeholder(R.drawable.image)
                 .into(ivImages)
+            tvDate.text = modelList.get(position).date
+            tvTitle.text = modelList.get(position).title
         }
 
         holder.itemView.setOnClickListener {

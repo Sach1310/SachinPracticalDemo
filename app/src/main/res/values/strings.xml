@@ -2,4 +2,7 @@
     <string name="app_name">SachinPractical</string>
     <string name="alert">Alert</string>
     <string name="some_wrong">Something wrong!</string>
+    <string name="date">"Date:\u0020"</string>
+    <string name="title">"Title:\u0020"</string>
+    <string name="des">"Description:\u0020"</string>
 </resources>
